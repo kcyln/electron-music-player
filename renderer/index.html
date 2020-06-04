@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>音乐播放器</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="./index.css">
+    </head>
+
+    <body>
+        <div class="container mt-4">
+            <h1>我的播放器</h1>
+            <button type="button" id="add-music-button" class="btn btn-primary btn-lg btn-block mt-4">添加歌曲到曲库</button>
+            <div id="tracksList" class="mt-4"></div>
+        </div>
+        <div class="container fixed-bottom bg-white">
+            <hr>
+            <div class="row my-2" id="player-status"></div>
+            <div class="progress mb-4">
+                <div class="progess-bar bg-success" role="progressbar" id="player-progess" style="width: 0%"></div>
+            </div>
+        </div>
+
+        <script>
+            require('./index')
+        </script>
+        <!-- <script src="index.js"></script> -->
+    </body>
+</html>

@@ -1,0 +1,44 @@
+{
+    "name": "music-player",
+    "version": "1.0.0",
+    "description": "A minimal Electron application",
+    "main": "main.js",
+    "scripts": {
+        "start": "nodemon --watch main.js --exec electron .",
+        "dist": "electron-builder"
+    },
+    "repository": "https://github.com/kcyln/electron-music-player",
+    "keywords": [
+        "Electron",
+        "music-player"
+    ],
+    "author": "kcyln",
+    "devDependencies": {
+        "electron": "^9.0.0",
+        "electron-builder": "^22.7.0"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.13.0",
+        "bootstrap": "^4.5.0",
+        "electron-store": "^5.1.1",
+        "uuid": "^8.1.0"
+    },
+    "build": {
+        "appId": "simpleMusicPlayer",
+        "productName": "Music Player",
+        "copyright": "©2020 Kcyln, Inc.",
+        "files": [
+            "**/*",
+            "build/icon.*"
+        ],
+        "win": {
+            "target": "nsis",
+            "icon": "build/icon.ico"
+        },
+        "nsis": {
+            "allowToChangeInstallationDirectory": true,
+            "oneClick": false,
+            "perMachine": false
+        }
+    }
+}
