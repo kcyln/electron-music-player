@@ -1,1 +1,7 @@
-# simple-music-player
+### simple-music-player
+
+> How Use
+
+```
+npm start
+```
