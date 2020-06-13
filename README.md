@@ -1,6 +1,6 @@
 ### simple-music-player
 
-> How Use
+> How To Use
 
 ```
 npm start
